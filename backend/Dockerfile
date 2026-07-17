@@ -1,6 +1,9 @@
 # ---- build stage ----
 FROM node:22-alpine AS build
 WORKDIR /app
+# Prisma's query/schema engines need OpenSSL; node:22-alpine ships without it,
+# which makes Prisma silently fail to detect libssl and crash at runtime.
+RUN apk add --no-cache openssl
 COPY package*.json ./
 RUN npm ci
 COPY prisma ./prisma
@@ -11,6 +14,7 @@ RUN npm run build
 # ---- runtime stage ----
 FROM node:22-alpine
 WORKDIR /app
+RUN apk add --no-cache openssl
 ENV NODE_ENV=production
 COPY package*.json ./
 RUN npm ci --omit=dev
