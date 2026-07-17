@@ -1,0 +1,62 @@
+# DAR Construction ERP — full stack
+# Usage: docker compose up -d   → app on http://localhost:3000 (api on :4000)
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dar
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-dar_secure_password}
+      POSTGRES_DB: dar_erp
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U dar -d dar_erp']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://dar:${DB_PASSWORD:-dar_secure_password}@db:5432/dar_erp?schema=public
+      PORT: 4000
+      NODE_ENV: production
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-change-me-access-secret-min-32-characters!!}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-change-me-refresh-secret-min-32-characters!}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      UPLOAD_DIR: /app/uploads
+    volumes:
+      - uploads:/app/uploads
+    ports:
+      - '4000:4000'
+
+  # one-shot seeding (workbook dataset) — runs after migrations, then exits
+  seed:
+    build: ./backend
+    depends_on:
+      api:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgresql://dar:${DB_PASSWORD:-dar_secure_password}@db:5432/dar_erp?schema=public
+    command: sh -c "sleep 10 && npx ts-node --compiler-options '{\"module\":\"commonjs\"}' prisma/seed.ts"
+    restart: 'no'
+
+  web:
+    build: ./frontend
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      API_INTERNAL_URL: http://api:4000
+    ports:
+      - '3000:3000'
+
+volumes:
+  db_data:
+  uploads:
