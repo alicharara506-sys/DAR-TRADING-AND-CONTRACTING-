@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-muted text-zinc-900 antialiased dark:bg-surface-dark dark:text-zinc-100;
+  }
+  ::selection {
+    @apply bg-brand-500/20;
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brand-500/60 ring-offset-1 ring-offset-surface dark:ring-offset-surface-dark;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-zinc-200/70 bg-white shadow-card dark:border-zinc-800 dark:bg-surface-muted-dark;
+  }
+  .glass {
+    @apply border border-white/40 bg-white/70 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/60;
+  }
+  .kpi-value {
+    @apply text-2xl font-semibold tracking-tight tabular-nums;
+  }
+}
+
+/* thin elegant scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(161 161 170 / 0.4) transparent;
+}

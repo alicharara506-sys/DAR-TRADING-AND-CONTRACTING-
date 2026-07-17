@@ -1,0 +1,59 @@
+{
+  "app": { "name": "دار ERP", "company": "دار للتجارة والمقاولات", "tagline": "منصة تخطيط موارد المقاولات" },
+  "auth": {
+    "signIn": "تسجيل الدخول", "email": "البريد الإلكتروني", "password": "كلمة المرور",
+    "welcome": "مرحباً بعودتك", "subtitle": "سجّل الدخول إلى مساحة عملك",
+    "invalid": "بريد إلكتروني أو كلمة مرور غير صحيحة", "signOut": "تسجيل الخروج", "changePassword": "تغيير كلمة المرور"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم", "projects": "المشاريع", "directory": "الدليل",
+    "clients": "العملاء", "consultants": "الاستشاريون", "contractors": "المقاولون", "suppliers": "الموردون",
+    "planning": "التخطيط", "schedule": "الجدول الزمني وغانت", "wbs": "هيكل تجزئة العمل", "resources": "تخطيط الموارد",
+    "finance": "المالية", "budget": "الميزانية", "costControl": "ضبط التكاليف", "cashflow": "التدفق النقدي",
+    "invoices": "فواتير العملاء", "supplierPayments": "مدفوعات الموردين", "boq": "جداول الكميات", "estimates": "التقدير",
+    "variations": "أوامر التغيير", "procurement": "المشتريات", "purchaseRequests": "طلبات الشراء",
+    "rfqs": "طلبات عروض الأسعار", "purchaseOrders": "أوامر الشراء", "inventory": "المخزون",
+    "materials": "المواد", "warehouses": "المستودعات", "stockMovements": "حركات المخزون", "materialRequests": "طلبات المواد",
+    "equipment": "المعدات", "maintenance": "الصيانة", "hr": "الموارد البشرية", "employees": "الموظفون",
+    "attendance": "الحضور", "payroll": "الرواتب", "governance": "الحوكمة", "risks": "سجل المخاطر",
+    "issues": "سجل المشكلات", "quality": "الجودة", "ncrs": "تقارير عدم المطابقة", "inspections": "طلبات الفحص",
+    "methodStatements": "بيانات المنهجية", "safety": "السلامة", "incidents": "الحوادث", "toolboxTalks": "اجتماعات التوعية",
+    "documents": "المستندات", "drawings": "المخططات", "rfis": "طلبات المعلومات", "submittals": "الاعتمادات",
+    "reports": "التقارير", "dailyReports": "التقارير اليومية", "progressReports": "تقارير التقدم",
+    "kpis": "مؤشرات الأداء", "ai": "المساعد الذكي", "admin": "الإدارة", "users": "المستخدمون والأدوار",
+    "auditLogs": "سجلات التدقيق", "settings": "الإعدادات", "notifications": "الإشعارات", "search": "ابحث في كل شيء…"
+  },
+  "common": {
+    "add": "إضافة", "edit": "تعديل", "delete": "حذف", "save": "حفظ", "cancel": "إلغاء", "close": "إغلاق",
+    "actions": "إجراءات", "status": "الحالة", "date": "التاريخ", "name": "الاسم", "description": "الوصف",
+    "amount": "المبلغ", "total": "الإجمالي", "search": "بحث", "filter": "تصفية", "export": "تصدير",
+    "loading": "جارٍ التحميل…", "noData": "لا توجد سجلات", "confirmDelete": "هل أنت متأكد من حذف هذا السجل؟",
+    "created": "تم إنشاء السجل", "updated": "تم تحديث السجل", "deleted": "تم حذف السجل", "error": "حدث خطأ ما",
+    "all": "الكل", "yes": "نعم", "no": "لا", "page": "صفحة", "of": "من", "rows": "صفوف", "required": "هذا الحقل مطلوب",
+    "generate": "إنشاء", "approve": "اعتماد", "download": "تنزيل", "upload": "رفع", "view": "عرض", "run": "تشغيل"
+  },
+  "dashboard": {
+    "executive": "لوحة التحكم التنفيذية", "portfolio": "نظرة عامة على المحفظة", "activeProjects": "المشاريع النشطة",
+    "contractValue": "قيمة العقد", "profitForecast": "توقعات الربح", "atRisk": "مشاريع في خطر",
+    "overallProgress": "التقدم الإجمالي", "budgetUtilized": "الميزانية المستهلكة", "daysRemaining": "الأيام المتبقية",
+    "costToDate": "التكلفة حتى تاريخه", "taskStatus": "توزيع حالة المهام", "budgetVsActual": "الميزانية — المخطط مقابل الفعلي مقابل المتوقع",
+    "upcomingMilestones": "المعالم القادمة", "sCurve": "منحنى القيمة المكتسبة (PV / EV / AC)", "health": "الصحة",
+    "onTrack": "على المسار", "critical": "حرج", "upcomingTasks": "الأنشطة القادمة"
+  },
+  "evm": {
+    "pv": "القيمة المخططة (PV)", "ev": "القيمة المكتسبة (EV)", "ac": "التكلفة الفعلية (AC)", "bac": "الميزانية عند الإكمال",
+    "cpi": "مؤشر أداء التكلفة", "spi": "مؤشر أداء الجدول", "eac": "التقدير عند الإكمال", "etc": "تقدير ما تبقى", "vac": "فرق الإكمال", "cv": "انحراف التكلفة", "sv": "انحراف الجدول"
+  },
+  "schedule": {
+    "runCpm": "تشغيل المسار الحرج", "saveBaseline": "حفظ خط الأساس", "criticalPath": "المسار الحرج", "float": "الفائض",
+    "duration": "المدة", "progress": "التقدم", "start": "البداية", "finish": "النهاية", "predecessors": "الأنشطة السابقة",
+    "delayAnalysis": "تحليل التأخير", "gantt": "مخطط غانت", "taskList": "قائمة المهام", "critical": "حرج",
+    "forecastFinish": "النهاية المتوقعة", "totalDuration": "المدة الإجمالية", "days": "يوم"
+  },
+  "ai": {
+    "title": "المساعد الذكي للمشاريع", "placeholder": "اسأل عن التأخيرات، التوقعات، مؤشر التكلفة، التدفق النقدي، الموردين، المخاطر…",
+    "send": "إرسال", "thinking": "جارٍ تحليل بيانات المشروع…", "newChat": "محادثة جديدة",
+    "suggestions": ["ما الأنشطة التي تؤخر المشروع؟", "توقّع موعد إنجاز المشروع", "لماذا مؤشر أداء التكلفة أقل من 1؟", "توقّع التدفق النقدي", "أي مورد يسبب أكبر تأخير؟", "أنشئ التقرير الأسبوعي"]
+  },
+  "login": { "demo": "حسابات تجريبية", "hint": "admin@dar-tc.com / Admin@123!" }
+}

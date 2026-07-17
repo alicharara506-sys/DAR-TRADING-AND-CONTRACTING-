@@ -1,0 +1,59 @@
+{
+  "app": { "name": "DAR ERP", "company": "DAR Négoce & Entreprise Générale", "tagline": "Plateforme ERP Construction" },
+  "auth": {
+    "signIn": "Se connecter", "email": "Adresse e-mail", "password": "Mot de passe",
+    "welcome": "Bon retour", "subtitle": "Connectez-vous à votre espace de travail",
+    "invalid": "E-mail ou mot de passe invalide", "signOut": "Se déconnecter", "changePassword": "Changer le mot de passe"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord", "projects": "Projets", "directory": "Annuaire",
+    "clients": "Clients", "consultants": "Consultants", "contractors": "Entrepreneurs", "suppliers": "Fournisseurs",
+    "planning": "Planification", "schedule": "Planning & Gantt", "wbs": "Structure WBS", "resources": "Plan de ressources",
+    "finance": "Finance", "budget": "Budget", "costControl": "Contrôle des coûts", "cashflow": "Trésorerie",
+    "invoices": "Factures clients", "supplierPayments": "Paiements fournisseurs", "boq": "Métré (BOQ)", "estimates": "Estimation",
+    "variations": "Ordres de modification", "procurement": "Achats", "purchaseRequests": "Demandes d'achat",
+    "rfqs": "Appels d'offres", "purchaseOrders": "Bons de commande", "inventory": "Stocks",
+    "materials": "Matériaux", "warehouses": "Entrepôts", "stockMovements": "Mouvements de stock", "materialRequests": "Demandes de matériaux",
+    "equipment": "Équipements", "maintenance": "Maintenance", "hr": "Ressources humaines", "employees": "Employés",
+    "attendance": "Présences", "payroll": "Paie", "governance": "Gouvernance", "risks": "Registre des risques",
+    "issues": "Journal des problèmes", "quality": "Qualité", "ncrs": "Non-conformités", "inspections": "Inspections",
+    "methodStatements": "Modes opératoires", "safety": "Sécurité", "incidents": "Incidents", "toolboxTalks": "Causeries sécurité",
+    "documents": "Documents", "drawings": "Plans", "rfis": "Demandes d'information", "submittals": "Soumissions",
+    "reports": "Rapports", "dailyReports": "Rapports journaliers", "progressReports": "Rapports d'avancement",
+    "kpis": "Tableau KPI", "ai": "Assistant IA", "admin": "Administration", "users": "Utilisateurs & rôles",
+    "auditLogs": "Journaux d'audit", "settings": "Paramètres", "notifications": "Notifications", "search": "Tout rechercher…"
+  },
+  "common": {
+    "add": "Ajouter", "edit": "Modifier", "delete": "Supprimer", "save": "Enregistrer", "cancel": "Annuler", "close": "Fermer",
+    "actions": "Actions", "status": "Statut", "date": "Date", "name": "Nom", "description": "Description",
+    "amount": "Montant", "total": "Total", "search": "Rechercher", "filter": "Filtrer", "export": "Exporter",
+    "loading": "Chargement…", "noData": "Aucun enregistrement", "confirmDelete": "Voulez-vous vraiment supprimer cet enregistrement ?",
+    "created": "Enregistrement créé", "updated": "Enregistrement mis à jour", "deleted": "Enregistrement supprimé", "error": "Une erreur est survenue",
+    "all": "Tous", "yes": "Oui", "no": "Non", "page": "Page", "of": "sur", "rows": "lignes", "required": "Ce champ est requis",
+    "generate": "Générer", "approve": "Approuver", "download": "Télécharger", "upload": "Téléverser", "view": "Voir", "run": "Exécuter"
+  },
+  "dashboard": {
+    "executive": "Tableau de bord exécutif", "portfolio": "Vue du portefeuille", "activeProjects": "Projets actifs",
+    "contractValue": "Valeur du contrat", "profitForecast": "Prévision de marge", "atRisk": "Projets à risque",
+    "overallProgress": "Avancement global", "budgetUtilized": "Budget consommé", "daysRemaining": "Jours restants",
+    "costToDate": "Coût à ce jour", "taskStatus": "Répartition des tâches", "budgetVsActual": "Budget — Prévu vs Réel vs Prévision",
+    "upcomingMilestones": "Jalons à venir", "sCurve": "Courbe en S (PV / EV / AC)", "health": "Santé",
+    "onTrack": "En bonne voie", "critical": "Critique", "upcomingTasks": "Activités à venir"
+  },
+  "evm": {
+    "pv": "Valeur planifiée (PV)", "ev": "Valeur acquise (EV)", "ac": "Coût réel (AC)", "bac": "Budget à terminaison",
+    "cpi": "IPC", "spi": "IPD", "eac": "CFT", "etc": "Reste à faire", "vac": "Écart à terminaison", "cv": "Écart de coût", "sv": "Écart de délai"
+  },
+  "schedule": {
+    "runCpm": "Calculer le chemin critique", "saveBaseline": "Figer la référence", "criticalPath": "Chemin critique", "float": "Marge",
+    "duration": "Durée", "progress": "Avancement", "start": "Début", "finish": "Fin", "predecessors": "Prédécesseurs",
+    "delayAnalysis": "Analyse des retards", "gantt": "Diagramme de Gantt", "taskList": "Liste des tâches", "critical": "Critique",
+    "forecastFinish": "Fin prévue", "totalDuration": "Durée totale", "days": "jours"
+  },
+  "ai": {
+    "title": "Assistant IA de projet", "placeholder": "Interrogez retards, prévisions, IPC, trésorerie, fournisseurs, risques…",
+    "send": "Envoyer", "thinking": "Analyse des données du projet…", "newChat": "Nouvelle conversation",
+    "suggestions": ["Quelles activités retardent le projet ?", "Prévoir la date d'achèvement", "Pourquoi mon IPC est-il inférieur à 1 ?", "Prédire la trésorerie", "Quel fournisseur cause le plus de retards ?", "Générer le rapport hebdomadaire"]
+  },
+  "login": { "demo": "Comptes de démonstration", "hint": "admin@dar-tc.com / Admin@123!" }
+}

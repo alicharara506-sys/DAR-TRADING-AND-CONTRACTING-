@@ -1,0 +1,59 @@
+{
+  "app": { "name": "DAR ERP", "company": "DAR Trading & Contracting", "tagline": "Construction ERP Platform" },
+  "auth": {
+    "signIn": "Sign in", "email": "Email address", "password": "Password",
+    "welcome": "Welcome back", "subtitle": "Sign in to your workspace",
+    "invalid": "Invalid email or password", "signOut": "Sign out", "changePassword": "Change password"
+  },
+  "nav": {
+    "dashboard": "Dashboard", "projects": "Projects", "directory": "Directory",
+    "clients": "Clients", "consultants": "Consultants", "contractors": "Contractors", "suppliers": "Suppliers",
+    "planning": "Planning", "schedule": "Schedule & Gantt", "wbs": "WBS", "resources": "Resource Planning",
+    "finance": "Finance", "budget": "Budget", "costControl": "Cost Control", "cashflow": "Cash Flow",
+    "invoices": "Client Invoices", "supplierPayments": "Supplier Payments", "boq": "BOQ", "estimates": "Estimation",
+    "variations": "Variation Orders", "procurement": "Procurement", "purchaseRequests": "Purchase Requests",
+    "rfqs": "RFQs & Quotes", "purchaseOrders": "Purchase Orders", "inventory": "Inventory",
+    "materials": "Materials", "warehouses": "Warehouses", "stockMovements": "Stock Movements", "materialRequests": "Material Requests",
+    "equipment": "Equipment", "maintenance": "Maintenance", "hr": "Human Resources", "employees": "Employees",
+    "attendance": "Attendance", "payroll": "Payroll", "governance": "Governance", "risks": "Risk Register",
+    "issues": "Issue Log", "quality": "Quality", "ncrs": "NCRs", "inspections": "Inspections",
+    "methodStatements": "Method Statements", "safety": "Safety", "incidents": "Incidents", "toolboxTalks": "Toolbox Talks",
+    "documents": "Documents", "drawings": "Drawings", "rfis": "RFIs", "submittals": "Submittals",
+    "reports": "Reports", "dailyReports": "Daily Reports", "progressReports": "Progress Reports",
+    "kpis": "KPI Dashboard", "ai": "AI Assistant", "admin": "Administration", "users": "Users & Roles",
+    "auditLogs": "Audit Logs", "settings": "Settings", "notifications": "Notifications", "search": "Search everything…"
+  },
+  "common": {
+    "add": "Add", "edit": "Edit", "delete": "Delete", "save": "Save", "cancel": "Cancel", "close": "Close",
+    "actions": "Actions", "status": "Status", "date": "Date", "name": "Name", "description": "Description",
+    "amount": "Amount", "total": "Total", "search": "Search", "filter": "Filter", "export": "Export",
+    "loading": "Loading…", "noData": "No records found", "confirmDelete": "Are you sure you want to delete this record?",
+    "created": "Record created", "updated": "Record updated", "deleted": "Record deleted", "error": "Something went wrong",
+    "all": "All", "yes": "Yes", "no": "No", "page": "Page", "of": "of", "rows": "rows", "required": "This field is required",
+    "generate": "Generate", "approve": "Approve", "download": "Download", "upload": "Upload", "view": "View", "run": "Run"
+  },
+  "dashboard": {
+    "executive": "Executive Dashboard", "portfolio": "Portfolio Overview", "activeProjects": "Active Projects",
+    "contractValue": "Contract Value", "profitForecast": "Profit Forecast", "atRisk": "Projects At Risk",
+    "overallProgress": "Overall Progress", "budgetUtilized": "Budget Utilized", "daysRemaining": "Days Remaining",
+    "costToDate": "Cost To Date", "taskStatus": "Task Status Breakdown", "budgetVsActual": "Budget — Planned vs Actual vs Forecast",
+    "upcomingMilestones": "Upcoming Milestones", "sCurve": "EVM S-Curve (PV / EV / AC)", "health": "Health",
+    "onTrack": "On Track", "critical": "Critical", "upcomingTasks": "Upcoming Activities"
+  },
+  "evm": {
+    "pv": "Planned Value (PV)", "ev": "Earned Value (EV)", "ac": "Actual Cost (AC)", "bac": "Budget at Completion",
+    "cpi": "CPI", "spi": "SPI", "eac": "EAC", "etc": "ETC", "vac": "VAC", "cv": "Cost Variance", "sv": "Schedule Variance"
+  },
+  "schedule": {
+    "runCpm": "Run CPM", "saveBaseline": "Save Baseline", "criticalPath": "Critical Path", "float": "Float",
+    "duration": "Duration", "progress": "Progress", "start": "Start", "finish": "Finish", "predecessors": "Predecessors",
+    "delayAnalysis": "Delay Analysis", "gantt": "Gantt Chart", "taskList": "Task List", "critical": "Critical",
+    "forecastFinish": "Forecast Finish", "totalDuration": "Total Duration", "days": "days"
+  },
+  "ai": {
+    "title": "AI Project Assistant", "placeholder": "Ask about delays, forecasts, CPI, cash flow, suppliers, risks…",
+    "send": "Send", "thinking": "Analysing project data…", "newChat": "New conversation",
+    "suggestions": ["Which activities are delaying the project?", "Forecast project completion", "Why is my CPI below 1?", "Predict cash flow", "Which supplier causes the highest delays?", "Generate weekly report"]
+  },
+  "login": { "demo": "Demo accounts", "hint": "admin@dar-tc.com / Admin@123!" }
+}
