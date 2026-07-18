@@ -22,6 +22,9 @@ COPY --from=build /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=build /app/node_modules/@prisma ./node_modules/@prisma
 COPY --from=build /app/dist ./dist
 COPY prisma ./prisma
+# ts-node (used for the seed script) needs the project tsconfig — without it,
+# it falls back to defaults that trip TS5109 (module/moduleResolution mismatch)
+COPY tsconfig.json ./
 # Pinned to the exact versions in package.json's devDependencies: an
 # unpinned `npm i -g ts-node typescript` can install two versions that are
 # incompatible with each other (ts-node reading internals typescript no
