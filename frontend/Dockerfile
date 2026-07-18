@@ -1,6 +1,12 @@
 # ---- build stage ----
 FROM node:22-alpine AS build
 WORKDIR /app
+# next.config.mjs's rewrites() is resolved once during `next build` and baked
+# into the routes manifest — it is NOT re-read from the environment at
+# container start. The API's internal address must therefore be supplied as a
+# build argument, not just a runtime environment variable.
+ARG API_INTERNAL_URL=http://localhost:4000
+ENV API_INTERNAL_URL=$API_INTERNAL_URL
 COPY package*.json ./
 RUN npm ci
 COPY . .

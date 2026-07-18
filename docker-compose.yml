@@ -48,7 +48,12 @@ services:
     restart: 'no'
 
   web:
-    build: ./frontend
+    build:
+      context: ./frontend
+      args:
+        # Must be passed at BUILD time — Next.js resolves next.config.mjs's
+        # rewrites() once during `next build`, not at container start.
+        API_INTERNAL_URL: http://api:4000
     restart: unless-stopped
     depends_on:
       - api
