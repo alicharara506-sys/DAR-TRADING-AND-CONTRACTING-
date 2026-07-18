@@ -22,7 +22,12 @@ COPY --from=build /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=build /app/node_modules/@prisma ./node_modules/@prisma
 COPY --from=build /app/dist ./dist
 COPY prisma ./prisma
-RUN npm i -g prisma@5 ts-node typescript @types/node bcryptjs && mkdir -p uploads
+# Pinned to the exact versions in package.json's devDependencies: an
+# unpinned `npm i -g ts-node typescript` can install two versions that are
+# incompatible with each other (ts-node reading internals typescript no
+# longer exposes the same way), crashing with
+# "Cannot read properties of undefined (reading 'fileExists')".
+RUN npm i -g prisma@5.22.0 ts-node@10.9.2 typescript@5.9.3 @types/node@22.10.2 && mkdir -p uploads
 EXPOSE 4000
 HEALTHCHECK --interval=30s --timeout=5s --retries=5 \
   CMD wget -qO- http://localhost:4000/api/v1/health || exit 1
