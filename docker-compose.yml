@@ -44,7 +44,7 @@ services:
         condition: service_started
     environment:
       DATABASE_URL: postgresql://dar:${DB_PASSWORD:-dar_secure_password}@db:5432/dar_erp?schema=public
-    command: sh -c "sleep 10 && npx ts-node --compiler-options '{\"module\":\"commonjs\"}' prisma/seed.ts"
+    command: sh -c "sleep 10 && npx ts-node --transpile-only --compiler-options '{\"module\":\"commonjs\"}' prisma/seed.ts"
     restart: 'no'
 
   web:
